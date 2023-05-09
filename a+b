@@ -1,0 +1,31 @@
+// mostra soma
+int a=4;
+int b=6;
+int soma=a+b;
+Console.WriteLine("Soma: " + soma);
+
+**************************
+// pedir 2 numeros e soma 
+int a;
+int b;
+int soma;
+Console.WriteLine("Primeiro numero?");
+a = LerNumero();
+Console.WriteLine("Segundo numero?");
+b = LerNumero();
+soma = a + b;
+Console.WriteLine(a+" + "+b+" = " + soma);
+
+int LerNumero()
+{
+    int number;    
+    string input = Console.ReadLine();
+
+    if (!Int32.TryParse(input, out number))
+    {
+        Console.WriteLine("Incorreto! Apenas numeros!");
+        LerNumero();
+    }
+    return number;
+}
+**************************************
