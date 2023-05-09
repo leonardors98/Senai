@@ -1,9 +1,10 @@
 # mostra soma
+{
 int a=4;
 int b=6;
 int soma=a+b;
 Console.WriteLine("Soma: " + soma);
-
+}
 # pedir 2 numeros e soma 
 int a;
 int b;
