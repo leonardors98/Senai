@@ -1,0 +1,33 @@
+// pergunta e mostra nome e idade
+string nome;
+int idade;
+Console.WriteLine("Qual seu nome?");
+nome = Console.ReadLine();
+Console.WriteLine("Idade incorreta, apenas numeros!");
+LerIdade(); 
+Console.WriteLine("Nome = " + nome);
+Console.WriteLine("Idade = " + idade);
+
+
+//************************************************
+//pergnta e mostra nome e idade (com validação simples na idade)
+string nome;
+int idade = 99;
+Console.WriteLine("Qual seu nome?");
+nome = Console.ReadLine();
+LerIdade();
+Console.WriteLine("Nome = " + nome);
+Console.WriteLine("Idade = " + idade);
+
+void LerIdade()
+{
+    string input;
+    Console.WriteLine("Qual sua idade?");
+    input = Console.ReadLine();
+    if (!Int32.TryParse(input, out idade))
+    {
+        Console.WriteLine("Idade incorreta, apenas numeros!");
+        LerIdade();
+    }
+}
+
