@@ -1,0 +1,13 @@
+using static System.Console;
+
+string nome;
+int idade;
+WriteLine("Digite seu nome:");
+nome = ReadLine();
+WriteLine("Digite sua idade:");
+idade = Int32.Parse(ReadLine());
+
+//interpolação com as variaveis na string (tem q ter o $)
+WriteLine($"Seu nome: {nome} e sua idade: {idade}");
+// interpolação com variaveis no final, utilizando os numeros {n} para n variaveis
+WriteLine("Seu nome: {0} e sua idade: {1}",nome,idade);

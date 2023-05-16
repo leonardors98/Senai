@@ -1,0 +1,18 @@
+using static System.Console;
+
+int a = 2;
+
+// if aninhado
+if (a < 0)
+{
+    WriteLine($"o valor {a} é negativo");
+}
+else
+{
+    if (a == 0) {
+        WriteLine($"o valor {a} é igual a zero");
+    } 
+    else {
+        WriteLine($"o valor {a} é positivo");
+    }
+}

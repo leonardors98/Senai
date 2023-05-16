@@ -1,0 +1,16 @@
+using static System.Console;
+
+int a = 2;
+
+// if composto
+if(a < 0)
+{
+    WriteLine($"o valor {a} é negativo");
+}
+else if(a > 0 && a<10)
+{
+    WriteLine($"o valor {a} esta entre 0 - 10");
+}
+else {
+    WriteLine($"o valor {a} é maior que 10");
+}

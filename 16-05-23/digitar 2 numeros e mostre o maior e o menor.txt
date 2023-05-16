@@ -1,0 +1,24 @@
+using static System.Console;
+
+/*Faça um programa que peca ao usuario 
+digitar 2 numeros e mostre o maior e o menor*/
+
+double num1,num2;
+
+WriteLine($"Digite o primeiro numero");
+num1 = Convert.ToDouble(ReadLine());
+WriteLine($"Digite o segundo numero");
+num2 = Convert.ToDouble(ReadLine());
+
+if (num1< num2)
+{
+    WriteLine($"Maior: {num2} \nMenor: {num1}");
+}
+else if(num1>num2)
+{
+    WriteLine($"Maior: {num1} \nMenor: {num2}");
+}
+else if (num1 == num2) {
+
+    WriteLine($"os numeros {num1} e {num2} são iguais!");
+}

@@ -1,0 +1,6 @@
+using static System.Console;
+double velocidade, atrito, metros;
+velocidade = 90;
+atrito = 0.8;
+metros = (velocidade * velocidade) / (250 * atrito);
+WriteLine($"Distancia de frenagem: {metros}");

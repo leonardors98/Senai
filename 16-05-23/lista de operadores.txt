@@ -1,0 +1,21 @@
+# operações logicas
+a == b	-> A é igual B
+a != b	-> A Diferente de B
+a < b 	-> A menor q B
+a <= b	-> A Menor ou igual a B
+a > b 	-> A maior q B
+a >= b 	-> A maior ou igual q B
+!a	-> negação do A, se A for TRUE, será considerado FALSE
+
+# Operador aritméticos
++	adição
+-	subtração
+*	multiplicação
+/	divisão
+%	módulo (resto da divisão)
+
+
+# Operador Logico
+&&	And = E
+||	OR = OU
+!	NOT = NÃO

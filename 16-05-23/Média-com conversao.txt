@@ -1,0 +1,9 @@
+using static System.Console;
+double nota1,nota2, media;
+WriteLine("Digite a nota 1");
+nota1= Convert.ToDouble(ReadLine());
+WriteLine("Digite a nota 2");
+nota2= Convert.ToDouble(ReadLine());
+media = (nota1 + nota2) / 2;
+
+WriteLine($"Primeira nota : {nota1} \nSegunda nota: {nota2}\nMédia : {media}");
