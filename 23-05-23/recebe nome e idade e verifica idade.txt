@@ -1,0 +1,18 @@
+using static System.Console;
+
+//recebe nome e idade e verifica se é maior de idade
+string nome ="";
+int idade =0;
+
+WriteLine("Escreva seu nome");
+nome = ReadLine();
+WriteLine("escreva sua idade");
+idade = Convert.ToInt32(ReadLine());
+if (idade < 18)
+{
+    WriteLine("Muito novo para asistir");
+}
+else
+{
+    WriteLine("pode asistir !");
+}

@@ -1,0 +1,31 @@
+using static System.Console;
+
+//criar algoritimo para receber o nome do aluno e 4 notas
+//- média aceitavel é 6
+string nome;
+double nota1,nota2, nota3,nota4;
+double media=0;
+
+WriteLine("Digite Nome do aluno");
+nome = ReadLine();
+WriteLine($"Digite a nota 1");
+nota1 = Convert.ToDouble(ReadLine());
+WriteLine($"Digite a nota 2");
+nota2 = Convert.ToDouble(ReadLine());
+WriteLine($"Digite a nota 3");
+nota3 = Convert.ToDouble(ReadLine());
+WriteLine($"Digite a nota 4");
+nota4 = Convert.ToDouble(ReadLine());
+
+media = (nota1 + nota2 + nota3 + nota4)/ 4;
+
+WriteLine($"{nome}, a sua media é {media}");
+
+if (media >= 6)
+{
+    WriteLine("APROVADO!!");
+}
+else
+{
+    WriteLine("REPROVADO!!");
+}
