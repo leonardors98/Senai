@@ -1,6 +1,6 @@
 using static System.Console;
 
-//criar algoritimo para receber o nome do aluno e 3 notas
+//criar algoritimo para receber o nome do aluno e 4 notas
 //- média aceitavel é 6
 string nome;
 double nota1,nota2, nota3,nota4;
