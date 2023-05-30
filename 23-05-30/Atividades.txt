@@ -1,0 +1,264 @@
+using static System.Console;
+//1- Faça um programa que peça dois números e verifique (usando if e else) e
+//imprima o maior deles.
+int n1, n2;
+WriteLine("escreva o primeiro numero");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o segundo numero");
+n2 = Convert.ToInt32(ReadLine());
+if (n1 < n2)
+{
+    WriteLine($"o segundo numero {n2} é maior");
+
+}
+else if (n1> n2)
+{
+    WriteLine($"o primeiro numero {n1} é maior");
+
+}
+else if(n1==n2){
+    WriteLine($"o primeiro numero e o segundo são iguais {n1} = {n2}");
+
+}
+
+
+
+
+using static System.Console;
+/*
+ *2- Faça um programa que leia três números, verifique (usando if e else) e
+mostre o maior e o menor deles
+ */
+int n1, n2, n3;
+WriteLine("escreva o primeiro numero");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o segundo numero");
+n2 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o terceiro numero");
+n3 = Convert.ToInt32(ReadLine());
+if ((n1 > n2) && (n1 > n3))
+{
+    WriteLine("N1 é o maior numero");
+}
+else if (n2 > n1 && n2 > n3)
+{
+    WriteLine("N2 é o maior numero");
+}
+else if (n3 > n1 && n3 > n2)
+{
+    WriteLine("N3 é o maior numero");
+}
+
+if (n3 < n1 && n3 < n2)
+{
+    WriteLine($"N3 é o menor");
+}
+else if (n1 < n2 && n1 < n3)
+{
+    WriteLine($"N1 é o menor");
+}
+else if (n2 < n1 && n2 < n3)
+{
+    WriteLine($"N2 é o menor");
+}
+
+
+
+
+using static System.Console;
+/*
+ 3- Faça um programa para a leitura de duas notas parciais de um aluno.
+✓ A mensagem “Aprovado”, se a média alcançada for maior ou igual a
+sete;
+✓ A mensagem “Aprovado com Distinção”, se a média for igual a dez;
+✓ A mensagem “Reprovado” se a média for menor de do que sete.
+ */
+double n1, n2,media;
+WriteLine("escreva a primeira nota");
+n1 = Convert.ToDouble(ReadLine());
+WriteLine("escreva o segundo numero");
+n2 = Convert.ToDouble(ReadLine());
+media = (n1 + n2) / 2;
+if(media == 10)
+{
+    WriteLine("Aprovado com Distinção!");
+}
+else if(media >= 7)
+{
+    WriteLine("aprovado!");
+}
+else if (media < 7)
+{
+    WriteLine("Reprovado!");
+}
+
+
+
+
+
+
+
+using static System.Console;
+/*
+4 - Faça um programa que pergunte o preço de três produtos e informe qual
+produto você deve comprar, sabendo que a decisão é sempre o mais
+barato
+ */
+double n1, n2,n3;
+WriteLine("Valor do primeiro produto");
+n1 = Convert.ToDouble(ReadLine());
+WriteLine("Valor do segundo produto");
+n2 = Convert.ToDouble(ReadLine());
+WriteLine("Valor do terceiro produto");
+n3 = Convert.ToDouble(ReadLine());
+
+if(n1 <n2 && n1<n3)
+{
+    WriteLine("Compre o primeiro produto, mais barato");
+}
+if (n2 < n1 && n2 < n3)
+{
+    WriteLine("Compre o segundo produto, mais barato");
+}
+else 
+{
+    WriteLine("Compre o terceiro produto, mais barato");
+}
+
+
+
+
+
+using static System.Console;
+/*
+5- Escreva um programa em C que recebe um inteiro e diga se é par ou
+ímpar. Use o operador matemático % (resto da divisão ou módulo) e o
+teste condicional if. 
+ */
+int n1;
+WriteLine("Valor o numero ");
+n1 = Convert.ToInt32(ReadLine());
+if (n1 % 2 == 0)
+{
+    WriteLine("é par!");
+}
+else
+{
+    WriteLine("é inpar!");
+}
+
+
+
+
+
+
+using static System.Console;
+/*
+6- Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo
+que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não.
+Use alguns dos operadores lógicos OU (||) e E (&&). 
+ */
+int n1;
+WriteLine("Idade da pessoa ");
+n1 = Convert.ToInt32(ReadLine());
+if (n1 >=18 && n1<=67)
+{
+    WriteLine("Pode doar sangue");
+}
+else if(n1 <18)
+{
+    WriteLine("pessoa abaixo da idade");
+}else
+{
+    WriteLine("acima da idade");
+}
+
+
+
+
+
+
+
+using static System.Console;
+/*
+7- Escreva um algoritmo que armazene o valor 10 em uma variável A e o valor
+20 em uma variável B. A seguir (utilizando apenas atribuições entre
+variáveis) troque os seus conteúdos fazendo com que o valor que está em
+A passe para B e vice-versa. Ao final, escrever os valores que ficaram
+armazenados nas variáveis.
+ */
+int A = 10, B = 20,C;
+WriteLine($"Valor de A = {A}, Valor de B = {B}");
+C = A;
+A = B;
+B = C;
+WriteLine($"Valor de A = {A}, Valor de B = {B}");
+
+
+
+
+
+
+
+
+
+
+using static System.Console;
+/*
+8- Uma revendedora de carros usados paga a seus funcionários vendedores
+um salário fixo por mês, mais uma comissão também fixa para cada carro
+vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um
+algoritmo que leia o número de carros por ele vendidos, o valor total de
+suas vendas, o salário fixo e o valor que ele recebe por carro vendido.
+Calcule e escreva o salário final do vendedor.
+ */
+double NCarrosVend, ValTotalVendas,Salario,ValPorCarro, total;
+WriteLine($"Numero de carros vendidos");
+NCarrosVend = Convert.ToDouble(ReadLine());
+WriteLine($"Valor total das vendas");
+ValTotalVendas = Convert.ToDouble(ReadLine());
+WriteLine($"Salario fixo");
+Salario = Convert.ToDouble(ReadLine());
+WriteLine($"Valor por carro vendido");
+ValPorCarro = Convert.ToDouble(ReadLine());
+
+total = Salario + (ValPorCarro * NCarrosVend) + (0.5 * ValTotalVendas);
+WriteLine($"Valor total ${total}");
+
+
+
+
+
+
+
+
+using static System.Console;
+/*
+9- Escreva um algoritmo para ler uma temperatura em graus Fahrenheit,
+calcular e escrever o valor correspondente em graus Celsius
+ */
+double tempF, tempC;
+WriteLine($"Escreva a temperatura em graus Fahrenheit");
+tempF = Convert.ToDouble(ReadLine());
+tempC = (tempF - 32) / 1.8;
+WriteLine($"{tempF} Fahrenheit = {tempC} C");
+
+
+
+
+
+
+
+
+
+
+using static System.Console;
+/*
+10- Faça um algoritmo que transforme uma velocidade fornecida em m/s
+pelo usuário para Km/h. Para tal, multiplique o valor em m/s por 3,6. 
+ */
+double velMS, velKmH;
+WriteLine($"Escreva a velocidade em m/s");
+velMS = Convert.ToDouble(ReadLine());
+velKmH = (velMS * 3.6) ;
+WriteLine($"{velMS} m/s => {velKmH} Km/h");

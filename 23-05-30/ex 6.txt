@@ -1,0 +1,20 @@
+using static System.Console;
+/*
+6- Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo
+que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não.
+Use alguns dos operadores lógicos OU (||) e E (&&). 
+ */
+int n1;
+WriteLine("Idade da pessoa ");
+n1 = Convert.ToInt32(ReadLine());
+if (n1 >=18 && n1<=67)
+{
+    WriteLine("Pode doar sangue");
+}
+else if(n1 <18)
+{
+    WriteLine("pessoa abaixo da idade");
+}else
+{
+    WriteLine("acima da idade");
+}

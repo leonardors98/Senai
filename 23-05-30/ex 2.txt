@@ -1,0 +1,37 @@
+using static System.Console;
+/*
+ *2- Faça um programa que leia três números, verifique (usando if e else) e
+mostre o maior e o menor deles
+ */
+int n1, n2, n3;
+WriteLine("escreva o primeiro numero");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o segundo numero");
+n2 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o terceiro numero");
+n3 = Convert.ToInt32(ReadLine());
+if ((n1 > n2) && (n1 > n3))
+{
+    WriteLine("N1 é o maior numero");
+}
+else if (n2 > n1 && n2 > n3)
+{
+    WriteLine("N2 é o maior numero");
+}
+else if (n3 > n1 && n3 > n2)
+{
+    WriteLine("N3 é o maior numero");
+}
+
+if (n3 < n1 && n3 < n2)
+{
+    WriteLine($"N3 é o menor");
+}
+else if (n1 < n2 && n1 < n3)
+{
+    WriteLine($"N1 é o menor");
+}
+else if (n2 < n1 && n2 < n3)
+{
+    WriteLine($"N2 é o menor");
+}

@@ -1,0 +1,10 @@
+using static System.Console;
+/*
+9- Escreva um algoritmo para ler uma temperatura em graus Fahrenheit,
+calcular e escrever o valor correspondente em graus Celsius
+ */
+double tempF, tempC;
+WriteLine($"Escreva a temperatura em graus Fahrenheit");
+tempF = Convert.ToDouble(ReadLine());
+tempC = (tempF - 32) / 1.8;
+WriteLine($"{tempF} Fahrenheit = {tempC} C");

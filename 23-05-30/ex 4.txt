@@ -1,0 +1,26 @@
+using static System.Console;
+/*
+4 - Faça um programa que pergunte o preço de três produtos e informe qual
+produto você deve comprar, sabendo que a decisão é sempre o mais
+barato
+ */
+double n1, n2,n3;
+WriteLine("Valor do primeiro produto");
+n1 = Convert.ToDouble(ReadLine());
+WriteLine("Valor do segundo produto");
+n2 = Convert.ToDouble(ReadLine());
+WriteLine("Valor do terceiro produto");
+n3 = Convert.ToDouble(ReadLine());
+
+if(n1 <n2 && n1<n3)
+{
+    WriteLine("Compre o primeiro produto, mais barato");
+}
+if (n2 < n1 && n2 < n3)
+{
+    WriteLine("Compre o segundo produto, mais barato");
+}
+else 
+{
+    WriteLine("Compre o terceiro produto, mais barato");
+}

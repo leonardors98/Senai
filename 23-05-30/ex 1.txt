@@ -1,0 +1,22 @@
+using static System.Console;
+//1- Faça um programa que peça dois números e verifique (usando if e else) e
+//imprima o maior deles.
+int n1, n2;
+WriteLine("escreva o primeiro numero");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("escreva o segundo numero");
+n2 = Convert.ToInt32(ReadLine());
+if (n1 < n2)
+{
+    WriteLine($"o segundo numero {n2} é maior");
+
+}
+else if (n1> n2)
+{
+    WriteLine($"o primeiro numero {n1} é maior");
+
+}
+else if(n1==n2){
+    WriteLine($"o primeiro numero e o segundo são iguais {n1} = {n2}");
+
+}
