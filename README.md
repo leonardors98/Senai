@@ -8,7 +8,13 @@ Datas nos nomes = YY-MM-DD
 	string var = "texto";
 	WriteLine($" usando uma variavel direta {var}");
 	WriteLine(" usando um operador " + var);
+### outros uteis
 
+	WriteLine("Escreva seu nome");
+	nome = ReadLine();
+	WriteLine("escreva sua idade");
+	idade = Convert.ToInt32(ReadLine());
+	
 ## Condicionais
 ### If else
 	using static System.Console;
