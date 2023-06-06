@@ -168,3 +168,14 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	boolean = se é verdadeiro ou falso 		-> true || false
 	
 </details>
+	
+<details>
+  <summary> Arredondamento casas decimais </summary>
+	
+	double velMS, velKmH;
+	int digitos = 2;
+	WriteLine($"Escreva a velocidade em m/s");
+	velMS = Convert.ToDouble(ReadLine());
+	velKmH = (velMS * 3.6);
+	WriteLine($"{velMS} m/s => {Math.Round(velKmH,digitos)} Km/h");
+</details>
