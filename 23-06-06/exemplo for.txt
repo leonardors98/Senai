@@ -1,0 +1,21 @@
+using static System.Console;
+//digite 2 valores e mostre os numeros entre os intervalos
+int n1, n2;
+
+WriteLine("digite um numero ");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("digite outro numero ");
+n2 = Convert.ToInt32(ReadLine());
+if (n1 > n2)
+{
+    int temp;
+    temp = n1;
+    n1 = n2;
+    n2 = temp;
+}
+WriteLine($"os numeros no intervalo entre {n1} e {n2} são:");
+
+    for (int i = n1 + 1; i < n2; i++)
+    {
+        WriteLine($"{i}");
+    }

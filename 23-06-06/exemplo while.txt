@@ -1,0 +1,6 @@
+int contador=5;
+while(contador != 10)
+{
+    contador++;
+    WriteLine($"{contador}");
+}

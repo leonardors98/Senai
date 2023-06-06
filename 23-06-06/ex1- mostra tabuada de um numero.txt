@@ -1,0 +1,12 @@
+using static System.Console;
+
+int num;
+WriteLine("digite um numero ");
+num = Convert.ToInt32(ReadLine());
+WriteLine($"Tabuada do numero {num}");
+
+for (int i = 0; i <= 10; i++)
+{
+    WriteLine($" {num} X {i} = {num*i}");
+
+}
