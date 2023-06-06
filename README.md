@@ -83,6 +83,18 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	}
 	
 </details>
+	
+<details>
+  <summary> Foreach </summary>
+
+	string[] nomes = { "cleber", "carol", "Denis", "Roberto" };
+
+	foreach (string item in nomes)
+	{
+	    WriteLine($"{item}");
+	}
+	
+</details>
 
 
 
