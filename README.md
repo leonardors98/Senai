@@ -86,7 +86,8 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 
 <details>
   <summary> do while </summary>
-using static System.Console;
+	
+	using static System.Console;
 	int i = 0;
 	do {
 	    WriteLine($"loop atual : {i+1}");
@@ -126,6 +127,7 @@ using static System.Console;
 
 <details>
   <summary> Operador aritméticos </summary>
+	
 	+	adição
 	-	subtração
 	*	multiplicação
