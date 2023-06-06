@@ -8,7 +8,7 @@ Datas nos nomes = YY-MM-DD
 <details>
   <summary> Concatenação </summary>
 	
-	 using static System.Console;
+	using static System.Console;
 	string var = "texto";
 	WriteLine($" usando uma variavel direta {var}");
 	WriteLine(" usando um operador " + var);
@@ -70,7 +70,6 @@ Datas nos nomes = YY-MM-DD
 </details>
 
 
-### 
 <details>
   <summary> for </summary>
 
