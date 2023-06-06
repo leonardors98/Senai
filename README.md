@@ -12,15 +12,8 @@ Datas nos nomes = YY-MM-DD
 	string var = "texto";
 	WriteLine($" usando uma variavel direta {var}");
 	WriteLine(" usando um operador " + var);
-	
+
 </details>
-
-### outros uteis
-
-	WriteLine("Escreva seu nome");
-	nome = ReadLine();
-	WriteLine("escreva sua idade");
-	idade = Convert.ToInt32(ReadLine());
 	
 ## Condicionais
 
@@ -45,8 +38,6 @@ Datas nos nomes = YY-MM-DD
 </details>
 
 
-	
-### Switch case
 <details>
   <summary> Switch case </summary>
 
@@ -145,7 +136,14 @@ using static System.Console;
 </details>
 
 
+<details>
+  <summary> Concatenação </summary>
 
+	WriteLine("Escreva seu nome");
+	nome = ReadLine();
+	WriteLine("escreva sua idade");
+	idade = Convert.ToInt32(ReadLine());
+</details>
 
 
 <details>
@@ -154,4 +152,13 @@ using static System.Console;
 	&&	And = E
 	||	OR = OU
 	!	NOT = NÃO
+</details>
+
+<details>
+  <summary> Outros uteis </summary>
+
+	WriteLine("Escreva seu nome");
+	nome = ReadLine();
+	WriteLine("escreva sua idade");
+	idade = Convert.ToInt32(ReadLine());
 </details>
