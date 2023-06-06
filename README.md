@@ -109,6 +109,8 @@ using static System.Console;
 
 </details>
 
+### Operadores	
+	
 <details>
   <summary> operações logicas </summary>
 
@@ -120,8 +122,6 @@ using static System.Console;
 	a >= b 	-> A maior ou igual q B
 	!a	-> negação do A, se A for TRUE, será considerado FALSE
 </details>
-
-
 	
 
 <details>
@@ -136,16 +136,6 @@ using static System.Console;
 
 
 <details>
-  <summary> Concatenação </summary>
-
-	WriteLine("Escreva seu nome");
-	nome = ReadLine();
-	WriteLine("escreva sua idade");
-	idade = Convert.ToInt32(ReadLine());
-</details>
-
-
-<details>
   <summary> Operador Logico </summary>
 
 	&&	And = E
@@ -153,8 +143,9 @@ using static System.Console;
 	!	NOT = NÃO
 </details>
 
+### Outros itens
 <details>
-  <summary> Outros uteis </summary>
+  <summary> read line e convert </summary>
 
 	WriteLine("Escreva seu nome");
 	nome = ReadLine();
