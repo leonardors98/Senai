@@ -154,3 +154,15 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	WriteLine("escreva sua idade");
 	idade = Convert.ToInt32(ReadLine());
 </details>
+
+	
+<details>
+  <summary> Variaveis </summary>
+	
+	int = inteiro
+	string = texto 
+	char = caractere
+	double = numero racional (com virgula)
+	boolean = true || false
+	
+</details>
