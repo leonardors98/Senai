@@ -3,11 +3,18 @@
 # Ajudinha para as aulas
 Datas nos nomes = YY-MM-DD
 
-## Concatenação
-    using static System.Console;
+
+
+<details>
+  <summary> Concatenação </summary>
+	
+	 using static System.Console;
 	string var = "texto";
 	WriteLine($" usando uma variavel direta {var}");
 	WriteLine(" usando um operador " + var);
+	
+</details>
+
 ### outros uteis
 
 	WriteLine("Escreva seu nome");
@@ -16,7 +23,10 @@ Datas nos nomes = YY-MM-DD
 	idade = Convert.ToInt32(ReadLine());
 	
 ## Condicionais
-### If else
+
+<details>
+  <summary> If else </summary>
+	
 	using static System.Console;
 	int num = 0;
 	if (num == 0)
@@ -31,7 +41,15 @@ Datas nos nomes = YY-MM-DD
 
 	    }
 	}
+	
+</details>
+
+
+	
 ### Switch case
+<details>
+  <summary> Switch case </summary>
+
 	using static System.Console;
 
 	string frase1 = "esta é a frase 1";
@@ -57,21 +75,40 @@ Datas nos nomes = YY-MM-DD
 	        WriteLine("Caracter inválido !");
 	        break;
 	}
-### for
+	
+</details>
+
+
+### 
+<details>
+  <summary> for </summary>
+
 	using static System.Console;
 
 	for (int i = 0; i < 10; i++)
 	{
 	    WriteLine($"loop atual : {i}");
 	}
-### do while
-	using static System.Console;
+	
+</details>
+
+
+
+<details>
+  <summary> do while </summary>
+using static System.Console;
 	int i = 0;
 	do {
 	    WriteLine($"loop atual : {i+1}");
 	    i++;
 	}while (i< 10);
-### while
+	
+</details>
+
+
+<details>
+  <summary> while </summary>
+
 	using static System.Console;
 	int i = 0;
 	while (i < 10)
@@ -80,8 +117,11 @@ Datas nos nomes = YY-MM-DD
 	    i++;
 	}
 
+</details>
 
-### operações logicas
+<details>
+  <summary> operações logicas </summary>
+
 	a == b	-> A é igual B
 	a != b	-> A Diferente de B
 	a < b 	-> A menor q B
@@ -89,16 +129,29 @@ Datas nos nomes = YY-MM-DD
 	a > b 	-> A maior q B
 	a >= b 	-> A maior ou igual q B
 	!a	-> negação do A, se A for TRUE, será considerado FALSE
+</details>
 
-### Operador aritméticos
+
+	
+
+<details>
+  <summary> Operador aritméticos </summary>
 	+	adição
 	-	subtração
 	*	multiplicação
 	/	divisão
 	%	módulo (resto da divisão)
+	
+</details>
 
 
-### Operador Logico
+
+
+
+<details>
+  <summary> Operador Logico </summary>
+
 	&&	And = E
 	||	OR = OU
 	!	NOT = NÃO
+</details>
