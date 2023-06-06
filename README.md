@@ -161,10 +161,10 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 <details>
   <summary> Variaveis </summary>
 	
-	int = inteiro
-	string = texto 
-	char = caractere
-	double = numero racional (com virgula)
-	boolean = true || false
+	int = numeros inteiro 				-> 1, 2, 5;
+	string = texto 					-> "texto texto";
+	char = caractere				-> 't','e','x','t','o';
+	double = numero racional (com ponto)		-> 1.53 , 8.69
+	boolean = se é verdadeiro ou falso 		-> true || false
 	
 </details>
