@@ -4,7 +4,8 @@ using static System.Console;
 pelo usuário para Km/h. Para tal, multiplique o valor em m/s por 3,6. 
  */
 double velMS, velKmH;
+int digitos = 2;
 WriteLine($"Escreva a velocidade em m/s");
 velMS = Convert.ToDouble(ReadLine());
-velKmH = (velMS * 3.6) ;
-WriteLine($"{velMS} m/s => {velKmH} Km/h");
+velKmH = (velMS * 3.6);
+WriteLine($"{velMS} m/s => {Math.Round(velKmH,digitos)} Km/h");
