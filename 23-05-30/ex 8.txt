@@ -17,5 +17,5 @@ Salario = Convert.ToDouble(ReadLine());
 WriteLine($"Valor por carro vendido");
 ValPorCarro = Convert.ToDouble(ReadLine());
 
-total = Salario + (ValPorCarro * NCarrosVend) + (0.5 * ValTotalVendas);
+total = Salario + (ValPorCarro * NCarrosVend) + (0.05 * ValTotalVendas);
 WriteLine($"Valor total ${total}");
