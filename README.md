@@ -160,6 +160,8 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 </details>
 
 ### Outros itens
+	using static System.Console;
+	
 <details>
   <summary> read line e convert </summary>
 
