@@ -1,0 +1,18 @@
+using static System.Console;
+//receba 5 numero e escreva na tela, utilizamdo array
+
+int[] numeros = new int[5];
+
+WriteLine("digite 5 numeros");
+
+for (int i = 0; i < numeros.Length; i++)
+{
+    Write(i+1 + " - numero:   ");
+    numeros[i]= Convert.ToInt32(ReadLine());
+}
+WriteLine("\n**************\n");
+Array.Sort(numeros);
+foreach (var item in numeros)
+{
+    WriteLine(item);
+}

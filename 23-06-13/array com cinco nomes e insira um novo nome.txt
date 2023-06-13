@@ -1,0 +1,17 @@
+using static System.Console;
+//crie um array com cinco nomes e insira um novo nome no array
+//e apresente em ordem alfabetica na tela
+string[] nomes = { "Volvo", "Peugeot", "Nissan","lucas","fiat" };
+
+//para adicionar nova variavel no array
+string nNome = "novo nome";
+List<string> nNomes = new List<string>(nomes.ToList());
+nNomes.Add(nNome);
+nomes=nNomes.ToArray();
+Array.Sort(nomes);
+//fim para adicionar variavel no array
+
+foreach (var item in nomes)
+{
+    WriteLine(item);
+}

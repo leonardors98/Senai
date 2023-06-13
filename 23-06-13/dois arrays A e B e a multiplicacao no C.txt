@@ -1,0 +1,21 @@
+using static System.Console;
+//dois arrays A e B com 5 numeros.
+//Multiplique os dois arrays em sua
+//posicao de leitura (a[0] X b[0], a[1] X b[1]...)
+//e salve o resultado no array C
+
+int[] A = { 22,21,23,24,25};
+int[] B = {9,9,9,9,9};
+int[] C = new int[5];
+
+WriteLine("\n**************\n");
+
+for (int i = 0; i < C.Length; i++)
+{
+   C[i] = A[i]*B[i];
+}
+WriteLine("A X B = C\n_________");
+for (int i = 0; i < C.Length; i++)
+{
+    WriteLine($"{A[i]} X {B[i]} = {C[i]}");
+}

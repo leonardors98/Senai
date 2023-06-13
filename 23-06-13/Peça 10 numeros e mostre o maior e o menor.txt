@@ -1,0 +1,40 @@
+using static System.Console;
+//peça ao usuario 10 numeros e guarde em um array
+//ao final mostre o numero maior e o menor.
+
+int[] num = new int[10];
+
+
+for (int i = 0; i < num.Length; i++)
+{
+    Write(i + 1 + " - numero:   ");
+    num[i] = Convert.ToInt32(ReadLine());
+}
+
+// MODO 1 ------- SORT E PEGA O MENOR E O MAIOR
+/*Array.Sort(num);
+WriteLine($"o menor numero - {num[0]} \nO maior numero - {num[9]}");
+*/
+
+
+//MODO 2 ------- .MIN E .MAX JÁ RETORNA O MENOR E O MAIOR
+WriteLine($"o menor numero - {num.Min()} \nO maior numero - {num.Max()}");
+
+
+// MODO 3 ------ UTILIZANDO FOR E VERIFICANDO VARIAVEL POR VARIAVEL
+/*
+int maior = num[0];
+int menor = num[0];
+for(int i = 1; i < num.Length; i++)
+{
+    if (maior < num[i])
+    {
+        maior = num[i];
+    }
+    if (menor > num[i])
+    {
+        menor = num[i];
+    }
+}
+WriteLine($"o menor numero - {menor} \nO maior numero - {maior}");
+*/

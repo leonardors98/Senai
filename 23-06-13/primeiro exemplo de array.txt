@@ -1,0 +1,26 @@
+using static System.Console;
+
+string[] carros = { "Volvo", "Peugeot", "Nissan" };
+
+WriteLine(carros[0]);
+carros[0] = "Opel";
+WriteLine(carros[0]);
+
+foreach (var item in carros)
+{
+    WriteLine(item);
+}
+
+WriteLine("**********");
+
+//para adicionar nova variavel no array
+string novocarro = "Fiat";
+List<string> novocarros = new List<string>(carros.ToList());
+novocarros.Add(novocarro);
+carros = novocarros.ToArray();
+//fim para adicionar variavel no array
+
+foreach (var item in carros)
+{
+    WriteLine(item);
+}
