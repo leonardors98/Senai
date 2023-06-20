@@ -1,0 +1,26 @@
+using static System.Console;
+// faça um programa que crie uma lista e peca ao usuario digitar 10 nomes e
+// 10 notas, de uma turma TDS, exiba ao final a média das notas da turma,
+// e imprima o nome do aluno e sua nota
+
+List<string> nomes = new List<string>();
+List<double> notas = new List<double>();
+double total=0;
+
+for (int i = 0; i < 10; i++)
+{
+    WriteLine("Digite o nome do aluno " + (i + 1));
+    nomes.Add(ReadLine());
+    WriteLine("Digite agora sua nota: ");
+    notas.Add(Convert.ToDouble(ReadLine()));
+    total += notas[i];
+}
+Clear();
+total = total / notas.Count;
+Console.WriteLine("Media da turma: " + total);
+
+for (int i = 0; i < 10; i++)
+{
+    WriteLine("Aluno : " + nomes[i] + " - Sua nota : " + notas[i]);
+    
+}
