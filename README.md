@@ -7,19 +7,19 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 
 
 
-<details>
-  <summary> Concatenação </summary>
+
+   <summary> Concatenação </summary>
 	
 	using static System.Console;
 	string var = "texto";
 	WriteLine($" usando uma variavel direta {var}");
 	WriteLine(" usando um operador " + var);
 
-</details>
+
 	
 ## Condicionais
 
-<details>
+
   <summary> If else </summary>
 	
 	using static System.Console;
@@ -37,10 +37,10 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	    }
 	}
 	
-</details>
 
 
-<details>
+
+
   <summary> Switch case </summary>
 
 	using static System.Console;
@@ -69,10 +69,10 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	        break;
 	}
 	
-</details>
 
 
-<details>
+
+
   <summary> for </summary>
 
 	using static System.Console;
@@ -82,9 +82,9 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	    WriteLine($"loop atual : {i}");
 	}
 	
-</details>
+
 	
-<details>
+
   <summary> Foreach </summary>
 
 	string[] nomes = { "cleber", "carol", "Denis", "Roberto" };
@@ -94,11 +94,11 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	    WriteLine($"{item}");
 	}
 	
-</details>
 
 
 
-<details>
+
+
   <summary> do while </summary>
 	
 	using static System.Console;
@@ -108,10 +108,10 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	    i++;
 	}while (i< 10);
 	
-</details>
 
 
-<details>
+
+
   <summary> while </summary>
 
 	using static System.Console;
@@ -122,11 +122,11 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	    i++;
 	}
 
-</details>
+
 
 ### Operadores	
 	
-<details>
+
   <summary> operações logicas </summary>
 
 	a == b	-> A é igual B
@@ -136,10 +136,10 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	a > b 	-> A maior q B
 	a >= b 	-> A maior ou igual q B
 	!a	-> negação do A, se A for TRUE, será considerado FALSE
-</details>
+
 	
 
-<details>
+
   <summary> Operador aritméticos </summary>
 	
 	+	adição
@@ -148,31 +148,31 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	/	divisão
 	%	módulo (resto da divisão)
 	
-</details>
 
 
-<details>
+
+
   <summary> Operador Logico </summary>
 
 	&&	And = E
 	||	OR = OU
 	!	NOT = NÃO
-</details>
+
 
 ### Outros itens
 	using static System.Console;
 	
-<details>
+
   <summary> read line e convert </summary>
 
 	WriteLine("Escreva seu nome");
 	nome = ReadLine();
 	WriteLine("escreva sua idade");
 	idade = Convert.ToInt32(ReadLine());
-</details>
+
 
 	
-<details>
+
   <summary> Variaveis </summary>
 	
 	int = numeros inteiro 				-> 1, 2, 5;
@@ -181,9 +181,9 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	double = numero racional (com ponto)		-> 1.53 , 8.69
 	boolean = se é verdadeiro ou falso 		-> true || false
 	
-</details>
+
 	
-<details>
+
   <summary> Arredondamento casas decimais </summary>
 	
 	double velMS, velKmH;
@@ -192,4 +192,4 @@ Nome dos arquivos => Datas nos nomes YY-MM-DD
 	velMS = Convert.ToDouble(ReadLine());
 	velKmH = (velMS * 3.6);
 	WriteLine($"{velMS} m/s => {Math.Round(velKmH,digitos)} Km/h");
-</details>
+
