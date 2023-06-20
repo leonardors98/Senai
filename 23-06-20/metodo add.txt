@@ -1,0 +1,10 @@
+//metodo add 
+List<int>numberList = new List<int>(); 
+numberList.Add(1);
+numberList.Add(2); 
+numberList.Add(3);
+
+foreach (var item in numberList)
+{
+    WriteLine(item);
+}

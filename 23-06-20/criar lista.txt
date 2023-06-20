@@ -1,0 +1,7 @@
+//list com capacidade padrao
+List<Int16> list = new List<Int16>();
+
+//List com capacidade 5
+List<string> authors = new List<string>(5);
+string[] animals = { "Cow", "Camel", "elephant"};
+List<string> animalList=new List<string>(animals);

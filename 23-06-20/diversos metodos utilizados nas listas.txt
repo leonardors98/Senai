@@ -1,0 +1,57 @@
+using static System.Console;
+
+List<int> numberList = new List<int>();
+int num;
+
+for (int i = 0; i < 7; i++)
+{
+    /*WriteLine("Digite um numero para a posição "+i);
+    numberList.Add(Convert.ToInt32(ReadLine()));*/
+    numberList.Add((1+i)*11);
+}
+
+foreach (var item in numberList)
+    WriteLine(item);
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Numero da posição 1 da lista é " + numberList[1]);
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Contagem de registro da lista é " + numberList.Count);
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Capacidade de registro da lista " + numberList.Capacity);
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Inserir o numero 100 na posicao 2");
+numberList.Insert(2, 100);
+foreach (var item in numberList)
+    WriteLine(item);
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("remover o numero 100 da lista e o que estiver na posição");
+numberList.Remove(100);
+numberList.RemoveAt(2);
+foreach (var item in numberList)
+    WriteLine(item);
+
+//encontrar elemento na lista com IndexOf
+//retorna -1 caso nao encontre
+WriteLine("\n-----------------------------------\n");
+WriteLine("Digite um numero para busca");
+int indexOf = numberList.IndexOf(Convert.ToInt32(ReadLine()));
+WriteLine(indexOf);
+if (indexOf >= 0)
+{
+    WriteLine("numero encontrado na posição " + indexOf);
+}
+else
+    WriteLine("Numero não encontrado na lista");
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Classificar os elementos");
+numberList.Sort();
+
+WriteLine("\n-----------------------------------\n");
+WriteLine("Inverter a lista");
+numberList.Reverse();

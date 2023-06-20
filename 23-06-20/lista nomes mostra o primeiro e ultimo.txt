@@ -1,0 +1,21 @@
+
+using static System.Console;
+// faça um programa que crie uma lista de nomes e peça ao usuario
+// para digitar 10 nomes, exiba o primeiro e o ultimo nome da lista
+List<string> nomes = new List<string>();
+
+
+for (int i = 0; i < 10; i++)
+{
+    WriteLine("Digite um numero para a posição "+i);
+    nomes.Add(ReadLine());
+}
+
+WriteLine("Primeiro nome " + nomes.First());
+
+WriteLine("Ultimo nome " + nomes.Last());
+
+
+WriteLine("\n\ntodos os nomes ");
+foreach (var item in nomes)
+    WriteLine(item);
