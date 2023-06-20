@@ -6,8 +6,9 @@ using static System.Console;
 List<string> nomes = new List<string>();
 List<double> notas = new List<double>();
 double total=0;
+int totalPessoas=10;
 
-for (int i = 0; i < 10; i++)
+for (int i = 0; i < totalPessoas; i++)
 {
     WriteLine("Digite o nome do aluno " + (i + 1));
     nomes.Add(ReadLine());
@@ -16,10 +17,10 @@ for (int i = 0; i < 10; i++)
     total += notas[i];
 }
 Clear();
-total = total / notas.Count;
+total = total / totalPessoas;
 Console.WriteLine("Media da turma: " + total);
 
-for (int i = 0; i < 10; i++)
+for (int i = 0; i < totalPessoas; i++)
 {
     WriteLine("Aluno : " + nomes[i] + " - Sua nota : " + notas[i]);
     
